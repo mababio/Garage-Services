@@ -1,5 +1,5 @@
 FROM python:3.10-slim
-RUN apt-get update && apt-get install vim curl lsof git -y
+RUN apt-get update && apt-get install vim curl lsof git redis-tools -y
 ######create appuser and directory for app#########
 RUN groupadd -g 999 appuser && \
     useradd -m -r -u 999 -g appuser appuser

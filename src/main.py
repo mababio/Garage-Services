@@ -25,7 +25,7 @@ class GarageRequest(Enum):
     """
 
     OPEN = 'open'
-    CLOSED = 'closed'
+    CLOSED = 'close'
 
 
 def publish_garage_request(request: GarageRequest):
